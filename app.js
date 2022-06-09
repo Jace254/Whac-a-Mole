@@ -4,7 +4,7 @@ const holes = document.querySelectorAll('.square');
 const button = document.getElementById('button');
 
 let resultS = 0;
-let time = 5;
+let time = 60;
 result.innerHTML = resultS;
 timeLeft.innerHTML = time;
 const Interval = 400;
@@ -44,7 +44,7 @@ function startGame(){
     start.addEventListener('click', () => {
         isOver = false;
         resultS = 0;
-        time = 5;
+        time = 60;
         timer();
         moveMole();
         button.removeChild(start);
